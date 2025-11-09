@@ -1,15 +1,37 @@
 # SoCal M&A Deal Finder
 
-Automated business acquisition deal finder for SoCal Business Group. Scrapes 28+ M&A marketplaces weekly and sends filtered results matching specific acquisition criteria.
+Automated business acquisition deal finder for SoCal Business Group. Monitors 28+ M&A marketplaces weekly and sends filtered results matching specific acquisition criteria.
+
+## 🚀 Recommended Approach: Email Alert System (FREE)
+
+**NEW:** We've built a 100% FREE email-based system that works perfectly!
+
+Instead of web scraping (which faces anti-bot protection), use email alerts from the platforms themselves:
+
+1. **Set up email alerts** on all 28 M&A platforms (2-3 hours one-time setup)
+2. **Automated parser** extracts listings from weekly emails
+3. **Filtered results** uploaded to Google Sheets automatically
+4. **Review curated list** instead of visiting 28 websites
+
+**Benefits:**
+- ✅ 100% FREE ($0/month)
+- ✅ Legal (uses platforms' own notification features)
+- ✅ Covers all 28 platforms
+- ✅ No anti-bot issues
+- ✅ Saves 10+ hours/week
+
+**Quick Start:** See `QUICK_START.md` or `EMAIL_ALERT_SETUP_GUIDE.md`
+
+---
 
 ## Overview
 
 This project automates the discovery of business acquisition opportunities by:
-- Scraping business-for-sale websites for listings in target markets
+- **Email Alerts** - Parsing weekly alerts from 28 M&A marketplaces (RECOMMENDED)
+- **Web Scraping** - Direct scraping where accessible (requires paid services)
 - Filtering based on revenue, cash flow, location, and business type criteria
 - Storing results in Google Sheets for easy review
-- Sending email digests when new qualified opportunities are found
-- Running automatically on a weekly schedule via Google Cloud Run + Cloud Scheduler
+- Running automatically on a weekly schedule
 
 ## Acquisition Criteria
 
@@ -43,11 +65,24 @@ Full list of 28 marketplaces in tracking spreadsheet
 
 ```
 socal-deal-finder/
-├── main.py                    # Main entry point
-├── scraper.py                 # Base scraper classes
-├── config.py                  # Configuration settings
-├── google_integrations.py     # Google Sheets & Gmail integration
-├── requirements.txt           # Python dependencies
+├── EMAIL ALERT SYSTEM (RECOMMENDED - FREE)
+│   ├── email_parser.py              # Parse M&A email alerts
+│   ├── sheets_uploader.py           # Upload to Google Sheets
+│   ├── test_email_connection.py     # Test email setup
+│   ├── EMAIL_ALERT_SETUP_GUIDE.md   # Complete setup guide
+│   └── QUICK_START.md               # Fast setup (1 hour)
+│
+├── WEB SCRAPING SYSTEM (Alternative - Requires Paid Services)
+│   ├── main.py                      # Main scraper entry point
+│   ├── scraper.py                   # Base scraper classes
+│   ├── scrapers/                    # Website-specific scrapers
+│   ├── SCRAPING_SOLUTIONS.md        # Anti-bot solutions
+│   └── test_all_sites.py            # Test website accessibility
+│
+├── SHARED COMPONENTS
+│   ├── config.py                    # Configuration settings
+│   ├── google_integrations.py       # Google Sheets & Gmail
+│   ├── requirements.txt             # Python dependencies
 ├── Dockerfile                 # Container configuration
 ├── cloudbuild.yaml           # Cloud Build configuration
 ├── deploy.sh                 # Deployment script
