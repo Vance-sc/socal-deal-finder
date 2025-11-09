@@ -1,0 +1,814 @@
+[
+  {
+    "name": "BizBuySell",
+    "url": "https://www.bizbuysell.com/",
+    "search_url": "https://www.bizbuysell.com/california-businesses-for-sale/",
+    "priority": 1,
+    "timestamp": "2025-11-09T15:08:24.730850",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BizQuest",
+    "url": "https://www.bizquest.com/",
+    "search_url": "https://www.bizquest.com/businesses-for-sale/california/",
+    "priority": 2,
+    "timestamp": "2025-11-09T15:08:27.955901",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Business Broker Network",
+    "url": "https://www.businessbroker.net/",
+    "search_url": "https://www.businessbroker.net/businesses/california/",
+    "priority": 3,
+    "timestamp": "2025-11-09T15:08:31.224101",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BizBen",
+    "url": "https://www.bizben.com/",
+    "search_url": "https://www.bizben.com/businesses-for-sale",
+    "priority": 4,
+    "timestamp": "2025-11-09T15:08:34.460751",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Strategic Business Brokers",
+    "url": "https://www.businessbrokerphoenixaz.com/",
+    "search_url": "https://www.businessbrokerphoenixaz.com/businesses-for-sale",
+    "priority": 5,
+    "timestamp": "2025-11-09T15:08:37.778760",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "DealStream",
+    "url": "https://dealstream.com/",
+    "search_url": "https://dealstream.com/businesses-for-sale/",
+    "priority": 6,
+    "timestamp": "2025-11-09T15:08:41.049987",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "MergerNetwork",
+    "url": "https://www.mergernetwork.com/",
+    "search_url": "https://www.mergernetwork.com/find-business/",
+    "priority": 7,
+    "timestamp": "2025-11-09T15:08:44.383328",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Sunbelt Business Brokers",
+    "url": "https://www.sunbeltnetwork.com/",
+    "search_url": "https://www.sunbeltnetwork.com/businesses-for-sale",
+    "priority": 8,
+    "timestamp": "2025-11-09T15:08:47.684670",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BusinessesForSale.com",
+    "url": "https://www.businessesforsale.com/",
+    "search_url": "https://www.businessesforsale.com/us/",
+    "priority": 9,
+    "timestamp": "2025-11-09T15:08:50.957087",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BizEx",
+    "url": "https://www.bizex.net/",
+    "search_url": "https://www.bizex.net/businesses-for-sale/",
+    "priority": 10,
+    "timestamp": "2025-11-09T15:08:54.229628",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BusinessMart",
+    "url": "https://www.businessmart.com/",
+    "search_url": "https://www.businessmart.com/businesses-for-sale/",
+    "priority": 11,
+    "timestamp": "2025-11-09T15:08:57.559795",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "VR Business Brokers",
+    "url": "https://www.vrbbusinessbrokers.com/",
+    "search_url": "https://www.vrbbusinessbrokers.com/businesses-for-sale",
+    "priority": 12,
+    "timestamp": "2025-11-09T15:09:00.847616",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Murphy Business",
+    "url": "https://www.murphybusiness.com/",
+    "search_url": "https://www.murphybusiness.com/businesses-for-sale",
+    "priority": 13,
+    "timestamp": "2025-11-09T15:09:04.129315",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Transworld Business Advisors",
+    "url": "https://www.tworld.com/",
+    "search_url": "https://www.tworld.com/businesses-for-sale/",
+    "priority": 14,
+    "timestamp": "2025-11-09T15:09:07.476712",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BizBroker24",
+    "url": "https://www.bizbroker24.com/",
+    "search_url": "https://www.bizbroker24.com/businesses-for-sale",
+    "priority": 15,
+    "timestamp": "2025-11-09T15:09:10.747178",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "LoopNet (Commercial)",
+    "url": "https://www.loopnet.com/",
+    "search_url": "https://www.loopnet.com/search/businesses-for-sale/",
+    "priority": 16,
+    "timestamp": "2025-11-09T15:09:14.025088",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BusinessBroker.com",
+    "url": "https://www.businessbroker.com/",
+    "search_url": "https://www.businessbroker.com/businesses-for-sale",
+    "priority": 17,
+    "timestamp": "2025-11-09T15:09:17.302403",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Acquire.com",
+    "url": "https://acquire.com/",
+    "search_url": "https://acquire.com/startups",
+    "priority": 18,
+    "timestamp": "2025-11-09T15:09:20.564014",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Flippa",
+    "url": "https://flippa.com/",
+    "search_url": "https://flippa.com/search?filter=business",
+    "priority": 19,
+    "timestamp": "2025-11-09T15:09:23.895600",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BizOffers",
+    "url": "https://www.bizoffers.com/",
+    "search_url": "https://www.bizoffers.com/businesses-for-sale",
+    "priority": 20,
+    "timestamp": "2025-11-09T15:09:27.209611",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "IBBA Marketplace",
+    "url": "https://www.ibba.org/",
+    "search_url": "https://www.ibba.org/find-a-business-broker/",
+    "priority": 21,
+    "timestamp": "2025-11-09T15:09:31.280211",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Axial Network",
+    "url": "https://www.axial.net/",
+    "search_url": "https://www.axial.net/",
+    "priority": 22,
+    "timestamp": "2025-11-09T15:09:34.525774",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BusinessesForSale.com",
+    "url": "https://www.businessesforsale.com/",
+    "search_url": "https://www.businessesforsale.com/us/search/",
+    "priority": 23,
+    "timestamp": "2025-11-09T15:09:37.794917",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "BuySellBusiness.com",
+    "url": "https://www.buysellbusiness.com/",
+    "search_url": "https://www.buysellbusiness.com/businesses-for-sale",
+    "priority": 24,
+    "timestamp": "2025-11-09T15:09:41.025733",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "MicroAcquire",
+    "url": "https://microacquire.com/",
+    "search_url": "https://microacquire.com/startups",
+    "priority": 25,
+    "timestamp": "2025-11-09T15:09:44.331177",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Empire Flippers",
+    "url": "https://empireflippers.com/",
+    "search_url": "https://empireflippers.com/marketplace/",
+    "priority": 26,
+    "timestamp": "2025-11-09T15:09:47.674073",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "FE International",
+    "url": "https://feinternational.com/",
+    "search_url": "https://feinternational.com/buy-a-website/",
+    "priority": 27,
+    "timestamp": "2025-11-09T15:09:50.926213",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  },
+  {
+    "name": "Quiet Light",
+    "url": "https://quietlight.com/",
+    "search_url": "https://quietlight.com/listings/",
+    "priority": 28,
+    "timestamp": "2025-11-09T15:09:54.239615",
+    "tests": {
+      "basic_http": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "cloudscraper": {
+        "accessible": false,
+        "status_code": 403,
+        "content_length": 0,
+        "html": null,
+        "error": "Status 403"
+      },
+      "structure": {
+        "analyzed": false,
+        "reason": "Site not accessible"
+      }
+    },
+    "accessible": false,
+    "recommended_method": "selenium_required_or_blocked"
+  }
+]
