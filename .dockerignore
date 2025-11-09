@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data and output files
+data/
+*.json
+*.csv
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials (important!)
+*.json
+!requirements.txt
+credentials/
+.env
+.env.local
+
+# Documentation
+README.md
+docs/
+
+# Tests
+tests/
+test_*.py
