@@ -95,13 +95,16 @@ class EmailParserOAuth:
                 flow = InstalledAppFlow.from_client_secrets_file(
                     self.credentials_path, SCOPES)
 
+                # Set redirect URI for console/CLI application
+                flow.redirect_uri = 'urn:ietf:wg:oauth:2.0:oob'
+
                 # Get authorization URL
                 auth_url, _ = flow.authorization_url(prompt='consent')
 
                 print(f"Please visit this URL:\n{auth_url}\n")
-                print("After authorizing, you'll get a code. Paste it below.")
+                print("After authorizing, you'll see a code. Copy it.")
 
-                code = input('Enter the authorization code: ').strip()
+                code = input('\nEnter the authorization code: ').strip()
                 flow.fetch_token(code=code)
                 self.creds = flow.credentials
 
