@@ -89,12 +89,13 @@ class EmailParserOAuth:
                     return False
 
                 print("\n🔐 Google OAuth Login Required")
-                print("A browser window will open for you to authenticate...")
+                print("A URL will be displayed below.")
+                print("Copy it, open in your browser, and sign in.")
                 print(f"Please sign in with: {self.email_address}\n")
 
                 flow = InstalledAppFlow.from_client_secrets_file(
                     self.credentials_path, SCOPES)
-                self.creds = flow.run_local_server(port=0)
+                self.creds = flow.run_console()
 
             # Save credentials for next run
             with open(token_path, 'wb') as token:
