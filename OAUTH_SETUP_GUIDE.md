@@ -77,6 +77,24 @@ Click "BACK TO DASHBOARD"
 - **Name**: M&A Deal Finder Desktop
 - Click "CREATE"
 
+### Step 5b: Configure Redirect URIs (IMPORTANT for Cloud Shell)
+
+**If you're using Google Cloud Shell**, you MUST add authorized redirect URIs:
+
+1. Go to: **APIs & Services** → **Credentials**
+2. Find your OAuth client "M&A Deal Finder Desktop"
+3. Click on it to edit
+4. Under **"Authorized redirect URIs"**, click "ADD URI"
+5. Add these two URIs:
+   - `http://localhost`
+   - `urn:ietf:wg:oauth:2.0:oob`
+6. Click "SAVE"
+
+**Why this is needed:**
+- Cloud Shell doesn't have direct browser access
+- The OOB (out-of-band) flow requires explicit redirect URI configuration
+- Without these URIs, you'll get "Access blocked" or "redirect_uri_mismatch" errors
+
 ### Step 6: Download Credentials
 
 1. A dialog will appear with your Client ID
@@ -197,11 +215,29 @@ socal-deal-finder/
 
 ## Troubleshooting
 
+### "Access blocked" or "Still blocked" in Cloud Shell
+
+**Problem:** OAuth authentication fails with access blocked errors in Google Cloud Shell
+
+**Solution:**
+1. Go to: https://console.cloud.google.com/apis/credentials
+2. Click on your OAuth client "M&A Deal Finder Desktop"
+3. Under "Authorized redirect URIs", click "ADD URI"
+4. Add these URIs:
+   - `http://localhost`
+   - `urn:ietf:wg:oauth:2.0:oob`
+5. Click "SAVE"
+6. Wait 1-2 minutes for changes to propagate
+7. Run `python email_parser_oauth.py` again
+
+**This is the most common issue in Cloud Shell environments!**
+
 ### "Error: redirect_uri_mismatch"
 
 **Solution:**
 - Make sure you selected "Desktop app" not "Web app"
-- Delete oauth_credentials.json and create new one
+- Add redirect URIs (see "Access blocked" section above)
+- Delete oauth_credentials.json and create new one if needed
 
 ### "Access blocked: M&A Deal Finder has not completed verification"
 
