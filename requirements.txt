@@ -1,5 +1,6 @@
 # Core AI & Search
-anthropic==0.39.0           # Claude API with web search (primary)
+anthropic>=0.34.0,<1.0.0    # Claude API with web search (primary)
+httpx>=0.27.0               # HTTP client (required by anthropic)
 requests==2.31.0            # HTTP requests
 python-dotenv==1.0.1        # Environment variables
 pyyaml==6.0.1               # Config files (YAML)
