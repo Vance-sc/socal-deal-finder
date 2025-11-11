@@ -1,0 +1,222 @@
+# M&A Marketplace Websites to Search
+# Full list: https://docs.google.com/spreadsheets/d/18nvP3J9CN7QIlMWEfyKya8_p2ermtHltl743wpEgHxQ/edit?usp=sharing
+
+# Priority Sites (Start with these 6)
+priority_sites:
+  - name: "BizBuySell"
+    url: "https://www.bizbuysell.com/"
+    domain: "bizbuysell.com"
+    enabled: true
+    priority: 1
+    search_tips: "Largest M&A marketplace, comprehensive listings"
+
+  - name: "BizQuest"
+    url: "https://www.bizquest.com/"
+    domain: "bizquest.com"
+    enabled: true
+    priority: 2
+    search_tips: "Second largest marketplace, good filters"
+
+  - name: "Business Broker Network"
+    url: "https://www.businessbroker.net/"
+    domain: "businessbroker.net"
+    enabled: true
+    priority: 3
+    search_tips: "Professional broker network, quality listings"
+
+  - name: "BizBen"
+    url: "https://www.bizben.com/"
+    domain: "bizben.com"
+    enabled: true
+    priority: 4
+    search_tips: "California-focused, strong SoCal presence"
+
+  - name: "Strategic Business Brokers Group"
+    url: "https://www.businessbrokerphoenixaz.com/"
+    domain: "businessbrokerphoenixaz.com"
+    enabled: true
+    priority: 5
+    search_tips: "Phoenix/Arizona specialist, Southwest focus"
+
+  - name: "DealStream"
+    url: "https://dealstream.com/"
+    domain: "dealstream.com"
+    enabled: true
+    priority: 6
+    search_tips: "Larger deals, institutional quality"
+
+# Additional Sites (Enable after testing priority sites)
+additional_sites:
+  - name: "BizEx"
+    url: "https://www.bizex.net/"
+    domain: "bizex.net"
+    enabled: false
+    priority: 7
+
+  - name: "BusinessMart"
+    url: "https://www.businessmart.com/"
+    domain: "businessmart.com"
+    enabled: false
+    priority: 8
+
+  - name: "Sunbelt Network"
+    url: "https://www.sunbeltnetwork.com/"
+    domain: "sunbeltnetwork.com"
+    enabled: false
+    priority: 9
+
+  - name: "Murphy Business"
+    url: "https://www.murphybusiness.com/"
+    domain: "murphybusiness.com"
+    enabled: false
+    priority: 10
+
+  - name: "Transworld Business Advisors"
+    url: "https://www.tworld.com/"
+    domain: "tworld.com"
+    enabled: false
+    priority: 11
+
+  - name: "VR Business Brokers"
+    url: "https://www.vrbb.com/"
+    domain: "vrbb.com"
+    enabled: false
+    priority: 12
+
+  - name: "BusinessBroker.net California"
+    url: "https://www.businessbroker.net/california"
+    domain: "businessbroker.net"
+    enabled: false
+    priority: 13
+
+  - name: "California Association of Business Brokers"
+    url: "https://www.cabb.org/"
+    domain: "cabb.org"
+    enabled: false
+    priority: 14
+
+  - name: "MergerNetwork"
+    url: "https://www.mergernetwork.com/"
+    domain: "mergernetwork.com"
+    enabled: false
+    priority: 15
+
+  - name: "LoopNet Business for Sale"
+    url: "https://www.loopnet.com/businesses-for-sale/"
+    domain: "loopnet.com"
+    enabled: false
+    priority: 16
+
+  - name: "BusinessesForSale.com"
+    url: "https://www.businessesforsale.com/"
+    domain: "businessesforsale.com"
+    enabled: false
+    priority: 17
+
+  - name: "BuyBizSell"
+    url: "https://www.buybizsell.com/"
+    domain: "buybizsell.com"
+    enabled: false
+    priority: 18
+
+  - name: "Acquire.com"
+    url: "https://acquire.com/"
+    domain: "acquire.com"
+    enabled: false
+    priority: 19
+    search_tips: "Digital businesses primarily"
+
+  - name: "Flippa"
+    url: "https://flippa.com/"
+    domain: "flippa.com"
+    enabled: false
+    priority: 20
+    search_tips: "Online businesses, some brick-and-mortar"
+
+  - name: "Empire Flippers"
+    url: "https://empireflippers.com/"
+    domain: "empireflippers.com"
+    enabled: false
+    priority: 21
+    search_tips: "Online businesses primarily"
+
+  - name: "FE International"
+    url: "https://feinternational.com/"
+    domain: "feinternational.com"
+    enabled: false
+    priority: 22
+
+  - name: "Quiet Light"
+    url: "https://quietlight.com/"
+    domain: "quietlight.com"
+    enabled: false
+    priority: 23
+
+  - name: "WebsiteClosers"
+    url: "https://websiteclosers.com/"
+    domain: "websiteclosers.com"
+    enabled: false
+    priority: 24
+
+  - name: "Axial"
+    url: "https://axial.net/"
+    domain: "axial.net"
+    enabled: false
+    priority: 25
+    search_tips: "Requires membership"
+
+  - name: "BizBen California"
+    url: "https://www.bizben.com/california-businesses-for-sale"
+    domain: "bizben.com"
+    enabled: false
+    priority: 26
+
+  - name: "Craigslist Business for Sale"
+    url: "https://losangeles.craigslist.org/search/bfs"
+    domain: "craigslist.org"
+    enabled: false
+    priority: 27
+    search_tips: "Unvetted, proceed with caution"
+
+  - name: "LinkedIn Business for Sale Groups"
+    url: "https://www.linkedin.com/"
+    domain: "linkedin.com"
+    enabled: false
+    priority: 28
+    search_tips: "Manual search required"
+
+# Search Query Templates
+search_query_template: |
+  Search {domain} for businesses matching these criteria:
+
+  FINANCIAL:
+  - Annual revenue: $1M - $10M
+  - Cash flow/EBITDA: $250K minimum
+
+  LOCATION:
+  - States: California (especially Southern California), Arizona, Nevada, New Mexico, Texas
+  - Cities: Los Angeles, Orange County, San Diego, Phoenix, Las Vegas
+
+  BUSINESS TYPE:
+  - Service-based businesses with recurring or repeat revenue
+  - Essential services, B2B services, healthcare, professional services
+  - Local market presence with operational upside
+
+  EXCLUDE:
+  - Restaurants, franchises, bars, food service
+  - Digital-only businesses, e-commerce without services
+  - Manufacturing (heavy)
+
+  Focus on listings posted in the last 90 days.
+
+  For each matching business, provide:
+  1. Business name (or type if name not disclosed)
+  2. Specific location (city, state)
+  3. Asking price
+  4. Annual revenue
+  5. Cash flow/EBITDA/SDE
+  6. Business type/industry
+  7. Brief description
+  8. Direct URL to listing
+  9. Why it matches our criteria
+  10. Confidence score (0-100%)

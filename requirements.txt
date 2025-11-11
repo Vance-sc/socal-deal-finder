@@ -1,12 +1,33 @@
-requests==2.31.0
-beautifulsoup4==4.12.3
-lxml==5.1.0
-pandas==2.2.0
-python-dotenv==1.0.1
-google-auth==2.28.0
-google-auth-oauthlib==1.2.0
-google-auth-httplib2==0.2.0
-google-api-python-client==2.119.0
-gspread==6.0.0
-selenium==4.17.2
-webdriver-manager==4.0.1
+# Core AI & Search
+anthropic==0.39.0           # Claude API with web search (primary)
+requests==2.31.0            # HTTP requests
+python-dotenv==1.0.1        # Environment variables
+pyyaml==6.0.1               # Config files (YAML)
+
+# Google Cloud & APIs
+google-auth==2.28.0         # Authentication
+google-auth-oauthlib==1.2.0 # OAuth
+google-auth-httplib2==0.2.0 # HTTP client
+google-api-python-client==2.119.0  # Google APIs (Sheets, Gmail)
+gspread==6.0.0              # Google Sheets (simpler API)
+google-cloud-logging==3.10.0  # Cloud Logging
+
+# Data processing
+pandas==2.2.0               # Data manipulation
+
+# Utilities
+tenacity==8.2.3             # Retry logic with exponential backoff
+python-dateutil==2.9.0      # Date parsing
+
+# Logging & Monitoring
+structlog==24.1.0           # Structured logging
+colorama==0.4.6             # Colored terminal output
+
+# Testing
+pytest==8.1.1               # Testing framework
+pytest-cov==4.1.0           # Code coverage
+pytest-mock==3.12.0         # Mocking
+
+# Development
+black==24.3.0               # Code formatting
+flake8==7.0.0               # Linting

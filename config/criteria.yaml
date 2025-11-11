@@ -1,0 +1,95 @@
+# Acquisition Criteria for SoCal Business Group
+# Easy to modify without touching code
+
+# Financial Criteria
+revenue:
+  min: 1000000      # $1M
+  max: 10000000     # $10M
+  flexible: true    # Allow 10-20% variance for strong deals
+
+cash_flow:
+  min: 250000       # $250K minimum EBITDA/SDE
+  flexible: true    # Allow lower if other factors strong
+
+# Geographic Criteria
+target_states:
+  - CA  # California (primary focus - Southern California)
+  - AZ  # Arizona
+  - NV  # Nevada
+  - NM  # New Mexico
+  - TX  # Texas
+
+priority_regions:
+  - "Southern California"
+  - "Orange County"
+  - "San Diego"
+  - "Los Angeles"
+  - "Inland Empire"
+  - "Phoenix"
+  - "Las Vegas"
+
+# Business Type Criteria
+preferred_types:
+  - "Service-based"
+  - "Recurring revenue"
+  - "Repeat customer business"
+  - "Essential services"
+  - "B2B services"
+  - "Healthcare services"
+  - "Professional services"
+  - "Home services"
+  - "Business services"
+  - "Local market presence"
+
+# Exclusions (Hard No)
+exclude_types:
+  - "Restaurant"
+  - "Franchise"
+  - "Bar"
+  - "Food service"
+  - "Food truck"
+  - "Cafe"
+  - "Coffee shop"
+  - "Digital-only"
+  - "E-commerce only"
+  - "Manufacturing"
+  - "Retail" # Unless service component
+
+exclude_keywords:
+  - "franchise fee"
+  - "royalty payments"
+  - "digital product"
+  - "online course"
+  - "drop shipping"
+  - "heavy manufacturing"
+
+# Desired Characteristics
+preferred_characteristics:
+  - "Operational upside"
+  - "Growth potential"
+  - "Recurring customers"
+  - "Repeat revenue"
+  - "Established customer base"
+  - "Strong reputation"
+  - "Local market leader"
+  - "Essential service"
+  - "Stable cash flow"
+  - "Owner-operated" # Often has upside
+
+# Scoring Weights (for AI assessment)
+scoring_weights:
+  revenue_match: 0.15
+  cash_flow_match: 0.20
+  location_match: 0.15
+  business_type_match: 0.25
+  characteristics_match: 0.15
+  growth_potential: 0.10
+
+# Minimum confidence score to include (0.0 to 1.0)
+min_confidence_score: 0.65  # 65% match or higher
+
+# Search Parameters
+search_params:
+  lookback_days: 90        # Search listings from last 90 days
+  max_results_per_site: 15 # Limit results per site
+  dedupe_enabled: true     # Remove duplicate listings
