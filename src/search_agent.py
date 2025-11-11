@@ -162,6 +162,14 @@ Return results as a JSON array. If no matches found, return an empty array [].
                 ],
             )
 
+            # Debug: Log the raw response
+            logger.debug(f"Claude response content blocks: {len(response.content)}")
+            for i, block in enumerate(response.content):
+                if hasattr(block, "text"):
+                    logger.debug(f"Block {i} text (first 500 chars): {block.text[:500]}")
+                elif hasattr(block, "type"):
+                    logger.debug(f"Block {i} type: {block.type}")
+
             # Parse response
             deals = self._parse_claude_response(response, site)
 
