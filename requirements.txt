@@ -11,6 +11,7 @@ google-auth-httplib2==0.2.0 # HTTP client
 google-api-python-client==2.119.0  # Google APIs (Sheets, Gmail)
 gspread==6.0.0              # Google Sheets (simpler API)
 google-cloud-logging==3.10.0  # Cloud Logging
+google-cloud-secret-manager==2.20.0  # Secret Manager (API keys)
 
 # Data processing
 pandas==2.2.0               # Data manipulation

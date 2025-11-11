@@ -11,6 +11,13 @@ from dotenv import load_dotenv
 import structlog
 from colorama import Fore, Style, init
 
+# Try to import Google Secret Manager (optional for local dev)
+try:
+    from google.cloud import secretmanager
+    HAS_SECRET_MANAGER = True
+except ImportError:
+    HAS_SECRET_MANAGER = False
+
 # Initialize colorama for cross-platform colored output
 init(autoreset=True)
 
@@ -52,6 +59,77 @@ def setup_logging(log_level: str = "INFO") -> structlog.BoundLogger:
     return logger
 
 
+def get_secret(secret_name: str, project_id: Optional[str] = None) -> Optional[str]:
+    """
+    Get a secret value from Google Secret Manager.
+
+    Args:
+        secret_name: Name of the secret
+        project_id: Google Cloud project ID (uses GOOGLE_PROJECT_ID env if not provided)
+
+    Returns:
+        Secret value or None if not found
+    """
+    if not HAS_SECRET_MANAGER:
+        return None
+
+    try:
+        # Get project ID
+        if not project_id:
+            project_id = os.getenv("GOOGLE_PROJECT_ID") or os.getenv("GOOGLE_CLOUD_PROJECT")
+
+        if not project_id:
+            return None
+
+        # Create client
+        client = secretmanager.SecretManagerServiceClient()
+
+        # Build secret name
+        name = f"projects/{project_id}/secrets/{secret_name}/versions/latest"
+
+        # Access secret
+        response = client.access_secret_version(request={"name": name})
+        secret_value = response.payload.data.decode("UTF-8")
+
+        return secret_value
+
+    except Exception as e:
+        # Silently fail and return None - caller will use env var
+        return None
+
+
+def get_config_value(env_var: str, secret_name: Optional[str] = None, default: Optional[str] = None) -> Optional[str]:
+    """
+    Get configuration value from Secret Manager or environment variable.
+
+    Priority:
+    1. Google Secret Manager (if available)
+    2. Environment variable
+    3. Default value
+
+    Args:
+        env_var: Environment variable name
+        secret_name: Secret Manager secret name (uses env_var if not provided)
+        default: Default value if not found
+
+    Returns:
+        Configuration value
+    """
+    # Try Secret Manager first (production)
+    if secret_name:
+        secret_value = get_secret(secret_name)
+        if secret_value:
+            return secret_value
+
+    # Fall back to environment variable (local development)
+    env_value = os.getenv(env_var)
+    if env_value:
+        return env_value
+
+    # Use default
+    return default
+
+
 def load_config() -> Dict[str, Any]:
     """
     Load configuration from .env file and YAML configs.
@@ -77,11 +155,11 @@ def load_config() -> Dict[str, Any]:
 
     # Build complete config
     config = {
-        # API Keys
-        "anthropic_api_key": os.getenv("ANTHROPIC_API_KEY"),
+        # API Keys (try Secret Manager first, then .env)
+        "anthropic_api_key": get_config_value("ANTHROPIC_API_KEY", "anthropic-api-key"),
 
         # Google Cloud
-        "google_project_id": os.getenv("GOOGLE_PROJECT_ID"),
+        "google_project_id": os.getenv("GOOGLE_PROJECT_ID") or os.getenv("GOOGLE_CLOUD_PROJECT"),
         "google_project_number": os.getenv("GOOGLE_PROJECT_NUMBER"),
 
         # Google Sheets
