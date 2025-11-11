@@ -37,7 +37,7 @@ class SearchAgent:
         """
         self.config = config
         self.client = Anthropic(api_key=config["anthropic_api_key"])
-        self.model = "claude-3-5-sonnet-20241022"  # Latest model with web search
+        self.model = "claude-3-5-sonnet-20240620"  # Claude 3.5 Sonnet with web search
         self.criteria = config["criteria"]
         self.max_tokens = 4096
 
