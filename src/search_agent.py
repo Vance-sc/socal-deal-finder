@@ -150,9 +150,8 @@ Return results as a JSON array. If no matches found, return an empty array [].
                 max_tokens=self.max_tokens,
                 tools=[
                     {
-                        "type": "web_search",
+                        "type": "web_search_20250305",
                         "name": "web_search",
-                        "description": "Search the web for business listings",
                     }
                 ],
                 messages=[
